@@ -1,11 +1,16 @@
 # Instruções
 Desenvolvedor: Danilo Martins Caldeira.
 
+# Sobre o projeto:
+Curso feito pegando as aulas de um cruso gratuíto da Udemy:
+- https://www.udemy.com/course/aprenda-o-framework-django-em-um-projeto-na-pratica/
+
 ## Ambiente virtual: 
 Os comandos a seguir podem ser execudados:
 1. Criar: ```python -m venv venv```
 2. Ativar: ```.\venv\Scripts\activate```
 3. Instalar o que é preciso: ```pip install -r requirements.txt```
+4. Para gerar o arquivo requirements.txt de forma automática: ```pip freeze > requirements.txt```
 1. Desativar: ```deactivate```
 
 ## Rotinas de trabalho com Branch isoladas de desenvolvimento
