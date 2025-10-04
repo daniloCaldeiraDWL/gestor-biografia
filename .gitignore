@@ -1,1 +1,17 @@
-gti
+# ignorar o ambiente virtual
+venv/
+
+# ignorar arquivos de cache do Python
+__pycache__/
+
+# ignorar arquivos de configuração do editor
+.vscode/
+
+# ignorar arquivos de log
+*.log
+
+# ignorar arquivos temporários
+*.tmp
+
+# ignorar o .env
+.env
