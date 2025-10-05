@@ -8,12 +8,14 @@ def index(request):
 def lista(request):
     pesquisa = request.GET.get('pesquisa')
 
-    if not pesquisa:
-        pessoas = Pessoa.objects.all()
-    else:
+    # Se houver uma pesquisa, filtra as biografias que contém o termo pesquisado, senão, retorna todas as biografias
+    if pesquisa:
         pessoas = Pessoa.objects.filter(biografia__contains=pesquisa)
+    else:
+        pessoas = Pessoa.objects.all()
         
     context = {
         'pessoas': pessoas
     }
+    
     return render(request, 'core/lista.html', context=context)
