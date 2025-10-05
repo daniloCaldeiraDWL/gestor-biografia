@@ -7,7 +7,12 @@ def index(request):
 
 def lista(request):
     pesquisa = request.GET.get('pesquisa')
-    pessoas = Pessoa.objects.filter(biografia__contains = pesquisa)
+
+    if not pesquisa:
+        pessoas = Pessoa.objects.all()
+    else:
+        pessoas = Pessoa.objects.filter(biografia__contains=pesquisa)
+        
     context = {
         'pessoas': pessoas
     }
