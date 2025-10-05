@@ -42,9 +42,7 @@ Podemos, agora acessar o serviço com o link gerado. Entre muitas funcoes.
 
 ### Painel administrador
 - Com a aplicação rodando, podemos acessar o painel administrador: http://127.0.0.1:8000/admin/
-- Caso não haja, temso que criar um super-usuário: ``````
-- : ``````
-- : ``````
+- Caso não haja, temso que criar um super-usuário: ```python manage.py createsuperuser```
 
 ## Rotinas de trabalho com Branch isoladas de desenvolvimento
 - Criar uma branch: ```git checkout -b brach/minha-nova-branch```
