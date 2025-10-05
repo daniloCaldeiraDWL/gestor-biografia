@@ -6,7 +6,8 @@ def index(request):
     return render(request, 'core/index.html')
 
 def lista(request):
-    pessoas = Pessoa.objects.all()
+    pesquisa = request.GET.get('pesquisa')
+    pessoas = Pessoa.objects.filter(biografia__contains = pesquisa)
     context = {
         'pessoas': pessoas
     }
