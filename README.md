@@ -1,6 +1,8 @@
 # Instruções
 Desenvolvedor: Danilo Martins Caldeira.
 
+#Treinamento feito entre os dias 04 e 05 de outubro de 2025. 
+
 # Sobre o projeto:
 Curso feito pegando as aulas de um cruso gratuíto da Udemy:
 - https://www.udemy.com/course/aprenda-o-framework-django-em-um-projeto-na-pratica/
