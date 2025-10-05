@@ -10,4 +10,28 @@
   <p class="lead">Abaixo você encontrará as biografias disponíveis.</p>
 </div>
 
+<table class="table">
+    <thead>
+        <tr class="alert-primary">
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Data de Criação</th>
+            <th>Data de Modificação</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+        {% for pessoa in pessoas %}
+        <tr>
+            <td>{{ pessoa.id }}</td>
+            <td>{{ pessoa.nome }}</td>
+            <td>{{ pessoa.data_criacao }}</td>
+            <td>{{ pessoa.data_modificacao }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+
 {% endblock %}
