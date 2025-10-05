@@ -46,7 +46,6 @@ Podemos, agora acessar o serviço com o link gerado. Entre muitas funcoes.
 - : ``````
 - : ``````
 
-
 ## Rotinas de trabalho com Branch isoladas de desenvolvimento
 - Criar uma branch: ```git checkout -b brach/minha-nova-branch```
     - Fazer as alterações necessárias
