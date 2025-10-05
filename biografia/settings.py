@@ -110,7 +110,8 @@ TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
-USE_TZ = True
+# USE_TZ = True
+USE_TZ = False # Para não ter problemas com data e hora no SQLite
 
 
 # Static files (CSS, JavaScript, Images)
