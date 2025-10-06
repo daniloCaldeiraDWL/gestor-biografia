@@ -5,13 +5,19 @@
 
 {% block content %}
 
-<h2>{{ pessoa.nome }}</h2>
-<div class="row"> 
+<br>
+
+<div class="row">  
     <div class="col-md-3">  
         <img src="{{ pessoa.url_foto }}" width="200" height="250">
 
     </div>
     <div class="col-md-9">  
+
+        <h2>{{ pessoa.nome }}</h2>
+
+        <p><strong>Idade:</strong> {{ pessoa.idade }} anos {{ pessoa.obito }}</p>
+
         <p class="text-justify">
             {{ pessoa.biografia }}
         </p>
