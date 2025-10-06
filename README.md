@@ -46,6 +46,13 @@ Podemos, agora acessar o serviço com o link gerado. Entre muitas funcoes.
 - Com a aplicação rodando, podemos acessar o painel administrador: http://127.0.0.1:8000/admin/
 - Caso não haja, temso que criar um super-usuário: ```python manage.py createsuperuser```
 
+### Alterações no modelo
+- Para realizar as alterações em modelos, significa que vamos alterar tabelas e o banco de dados na maioria dos casos. Criando novas tabelas ou inclindo. 
+1. Fazemos as alterações;
+2. Executamos o comando: ```python manage.py makemigrations```
+3. Em alguns casos, vamos ter que tratar casos como novos campos não nulos etc. 
+4. Após a migração, podemos executar: ```python manage.py migrate```
+
 ## Rotinas de trabalho com Branch isoladas de desenvolvimento
 - Criar uma branch: ```git checkout -b brach/minha-nova-branch```
     - Fazer as alterações necessárias
